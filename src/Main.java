@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Значение переменной bananas с типом byte равно " + bananas + " кг");
         short pears = 40;
         System.out.println("Значение переменной pears с типом short равно " + pears + " кг");
-        long pineapples = 50;
+        long pineapples = 50L;
         System.out.println("Значение переменной pineapples с типом long равно " + pineapples + " кг");
         float cherries = 11.5f;
         System.out.println("Значение переменной cherries с типом float равно " + cherries + " кг");
@@ -68,7 +68,9 @@ public class Main {
         short oneDayReduce2 = 500;
         int totalDays1 = totalReduce / oneDayReduce1;
         int totalDays2 = totalReduce / oneDayReduce2;
+       float crDay = totalReduce/((oneDayReduce1+oneDayReduce2)/2F);
         System.out.println("На похудение уйдет " + totalDays1 + " дней, если спортсмен будет терять каждый день по 250 грамм и " + totalDays2 + " дней, если по 500 грамм");
+        System.out.printf("Среднее количесво дней за которое получится похудеть %.2f%n", crDay);
 
         System.out.println("Задача 8");
         int Masha1 = 67760;
